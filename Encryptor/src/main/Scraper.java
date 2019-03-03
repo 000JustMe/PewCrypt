@@ -33,6 +33,7 @@ public class Scraper {
 	}
 
 	public  int parseJson(String json) {
+		// crude but light weight way of parsing target values
 		String tail = json.split(":")[3];
 		return Integer.parseInt(tail.split("\"")[1]);
 		
