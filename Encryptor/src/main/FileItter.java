@@ -43,7 +43,7 @@ public class FileItter {
 				//System.out.println(file.getPath());
 				if (file.isDirectory()) {
 					
-					itterFiles(file.listFiles()); // Calls same method again.
+					itterFiles(file.listFiles()); // recursion 
 
 				} else {
 					
